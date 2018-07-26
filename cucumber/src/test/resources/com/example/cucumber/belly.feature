@@ -6,7 +6,7 @@ Feature: Belly
 		Then my belly should growl
 
 	Scenario: choice beef
-		Given I have 3 types of food
+		Given I have 3 types of food:
 			|bread|
 			|pork|
 			|beef|

@@ -26,7 +26,7 @@ public class Stepdefs {
 	public void my_belly_should_growl() {
 	}
 
-	@Given("^I have (\\d+) types of food$")
+	@Given("^I have (\\d+) types of food:$")
 	public void i_have_types_of_food(int numberOfTypes, List<String> foodTypes) {
 		assertEquals(numberOfTypes, foodTypes.size());
 		assertEquals("beef", foodTypes.get(2));
