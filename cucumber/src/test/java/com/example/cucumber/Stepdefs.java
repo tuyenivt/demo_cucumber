@@ -41,4 +41,8 @@ public class Stepdefs {
 	public void i_should_get_food(String typeOfFood) {
 		assertEquals("beef", typeOfFood);
 	}
+
+	@Given("I have {int} {color} balls")
+	public void i_have_balls(int number, Color color) {
+	}
 }

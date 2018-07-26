@@ -12,3 +12,6 @@ Feature: Belly
 			|beef|
 		When I choice 1 type of food
 		Then I should get beef
+
+	Scenario: choice a ball
+		Given I have 5 red balls
