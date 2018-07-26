@@ -8,6 +8,10 @@ public enum Color {
 	private Color(String value) {
 		this.value = value;
 	}
+	
+	public String getValue() {
+		return value;
+	}
 
 	public static Color create(String value) {
 		for (Color color : values()) {

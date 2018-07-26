@@ -1,6 +1,8 @@
 package com.example.cucumber;
 
 import java.util.Locale;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import cucumber.api.TypeRegistry;
 import cucumber.api.TypeRegistryConfigurer;
@@ -15,7 +17,10 @@ public class TypeRegistryConfiguration implements TypeRegistryConfigurer {
 
 	@Override
 	public void configureTypeRegistry(TypeRegistry typeRegistry) {
-		typeRegistry.defineParameterType(new ParameterType<>("color", "red|blue|green", Color.class, Color::create));
+		typeRegistry.defineParameterType(new ParameterType<>(
+			"color",
+			Stream.of(Color.values()).map(Color::getValue).collect(Collectors.joining("|")), Color.class,
+			Color::create));
 	}
 
 }
