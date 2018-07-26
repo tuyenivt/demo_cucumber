@@ -37,7 +37,7 @@ public class Stepdefs {
 		assertEquals(1, choiceOfTypes);
 	}
 
-	@Then("^I should get (.*?)$")
+	@Then("I should get {word}")
 	public void i_should_get_food(String typeOfFood) {
 		assertEquals("beef", typeOfFood);
 	}
