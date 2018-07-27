@@ -1,3 +1,4 @@
+@smoke @color
 Feature: Color
 
 	Scenario: choice a ball
