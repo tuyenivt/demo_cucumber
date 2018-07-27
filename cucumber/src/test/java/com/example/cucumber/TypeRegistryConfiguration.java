@@ -12,6 +12,8 @@ import io.cucumber.datatable.DataTableType;
 import io.cucumber.datatable.TableRowTransformer;
 
 public class TypeRegistryConfiguration implements TypeRegistryConfigurer {
+	
+	//private final ObjectMapper objectMapper = new ObjectMapper();
 
 	@Override
 	public Locale locale() {
